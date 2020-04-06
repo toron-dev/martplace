@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: initial;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-size: 15px;
+    line-height: 24px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+@media (max-width: 720px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+}
