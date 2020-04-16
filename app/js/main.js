@@ -10,6 +10,12 @@ $(function(){
         infinite: true,
         slidesToShow: 1,
       });
+
+      $('.followers__slider-item').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      });
       
-      var mixer = mixitup('.products__inner-box')
+      var mixer = mixitup('.new__products-inner')
 });

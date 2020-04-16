@@ -17,7 +17,7 @@ li {
     list-style: none;
 }
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -62,4 +62,45 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+}
+.link-btn__box {
+    display: flex;
+    justify-content: center;
+}
+.link-btn {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 16px 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #fff;
+        color: $blue;
+        border-color: $blue;
+    }
+}
+.link-btn__bg-color {
+    background-color: $blue;
+}
+.link-btn__box-new__products,
+.link-btn__our-clients {
+  margin-top: 60px;
+}
+.advanteges__title,
+.our-clients__title,
+.latest-news__title {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 25px;
+  span {
+    color: $blue;
+  }
+}
+.advanteges__title-text,
+.our-clients__title-text,
+.latest-news__title-text {
+  max-width: 680px;
+  margin: 0 auto 60px;
 }
