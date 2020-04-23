@@ -23,6 +23,33 @@ body {
     line-height: 30px;
     color: $text;
 }
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+//start прижал футер к низу
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+// end прижал футер к низу
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -81,26 +108,41 @@ body {
         border-color: $blue;
     }
 }
+.link-btn-reverse {
+    color: $blue;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 16px 30px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s;
+    background-color: #fff;
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+        border-color: $blue;
+    }
+}
 .link-btn__bg-color {
     background-color: $blue;
 }
 .link-btn__box-new__products,
 .link-btn__our-clients {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 .advanteges__title,
 .our-clients__title,
 .latest-news__title {
-  font-size: 36px;
-  color: #000;
-  margin-bottom: 25px;
-  span {
-    color: $blue;
-  }
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 25px;
+    span {
+        color: $blue;
+    }
 }
 .advanteges__title-text,
 .our-clients__title-text,
 .latest-news__title-text {
-  max-width: 680px;
-  margin: 0 auto 60px;
+    max-width: 680px;
+    margin: 0 auto 60px;
 }
